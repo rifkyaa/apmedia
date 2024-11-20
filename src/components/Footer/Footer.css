@@ -1,0 +1,22 @@
+footer {
+    background-color: var(--accent-color);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 1rem 2rem;
+}
+
+.wrapper__sosmed-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title__footer {
+    color: var(--body-color);
+}
+
+.icon__sosmed-footer {
+    color: var(--body-color);
+    font-size: var(--h3-font-size);
+}

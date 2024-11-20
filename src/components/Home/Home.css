@@ -1,0 +1,88 @@
+.home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../assets/bgHeroSection.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    text-align: center;
+}
+
+.home__title {
+    color: var(--accent-color);
+    font-family: var(--title-font-primary);
+    font-size: var(--big-font-size);
+}
+
+.home__subtitle {
+    font-size: var(--h2-font-size);
+}
+
+
+.home__btn {
+    color: var(--title-color);
+    padding: 0.6rem 2rem ;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background: none;
+    text-transform: uppercase;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+}
+
+.home__btn:hover {
+    color: var(--title-color-dark);
+}
+
+.home__btn:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--accent-color);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn1::before {
+    transform: scaleX(0);
+}
+
+.btn1:hover::before {
+    transform: scaleX(1);
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 992px) {
+    
+}
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .home__title {
+        text-align: center;
+    }
+    
+    .home__subtitle {
+        font-size: var(--h3-font-size);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+
+}

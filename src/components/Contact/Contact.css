@@ -1,0 +1,71 @@
+.contact__content {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center start;
+}
+
+.section__contact-first {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.contact__title {
+    font-size: var(--h2-font-size);
+    color: var(--accent-color);
+    font-family: var(--title-font-primary);
+    border-bottom: 2px solid var(--accent-color);
+    padding: 0.5rem 0;
+    width: 120px;
+}
+
+.icon__contact {
+    font-size: var(--h3-font-size);
+}
+
+.value__icon-contact {
+    color: var(--title-color);
+}
+
+.value__icon-contact:hover {
+    color: var(--title-color-dark);
+}
+
+.img__contact {
+    width: 350px;
+}
+
+.wrapper__sosmed-contact {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .contact__content {
+        place-items: center;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .contact__content {
+        grid-template-columns: 1fr;
+        place-items: center;
+        row-gap: 3rem;
+    }
+
+    .section__contact-first {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact__title {
+        text-align: center;
+    }
+
+}
+

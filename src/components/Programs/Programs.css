@@ -1,0 +1,155 @@
+.programs {
+    position: relative;
+}
+
+.programs__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.programs__title {
+    font-size: var(--h2-font-size);
+    font-family: var(--title-font-primary);
+    color: var(--accent-color);
+}
+
+.programs__subtitle {
+    font-size: var(--normal-font-size);
+    color: var(--title-dark-color);
+}
+
+.wrapper__programs {
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.wrapper-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title-icon {
+    text-align: center;
+}
+
+.icon-programs {
+    font-size: var(--big-font-size);
+    color: var(--accent-color);
+}
+
+.latest-videos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.title__latestVideo {
+    font-size: var(--h2-font-size);
+    font-family: var(--title-font-primary);
+    color: var(--title-color);
+    text-align: center;
+}
+
+.wrapper-latestVideo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items:center;   
+    gap: 2rem;
+}
+
+.latest-video__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 300px;
+}
+
+.latest-video {
+    border: 2px solid var(--title-color);
+    padding: 0 1rem;
+}
+
+.title-video {
+    font-size: var(--normal-font-size);
+    text-align: center;
+    height: 3rem;
+}
+
+.wrapper-seeAll-video {
+    position: relative;
+    top: -0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--title-color);
+    color: var(--body-color);
+    gap: 0.7rem;
+    width: 330px;
+    height: 240px;
+    transition: all 0.2s ease-in;
+}
+
+.wrapper-seeAll-video:hover {
+    color: var(--title-color);
+    background-color: var(--title-color-dark);
+}
+
+.icon-seeAll-video {
+    font-size: var(--semiBig-font-size);
+}
+
+.title-seeAll-video {
+    font-size: var(--normal-font-size);
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 992px) {
+    .wrapper__video {
+        grid-template-columns: 1fr;
+    }
+}
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .programs__content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .programs__subtitle {
+        text-align: justify;
+    }
+
+    .wrapper-latestVideo {
+        grid-template-columns: 1fr;
+    }
+
+    .title__latestVideo {
+        text-align: center;
+    }
+
+    .icon-programs {
+        font-size: var(--semiBig-font-size);
+    }
+
+    .title-icon {
+        font-size: var(--normal-font-size);
+    }
+
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .title-icon {
+        font-size: var(--small-font-size);
+    }
+}

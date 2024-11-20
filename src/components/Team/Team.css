@@ -1,0 +1,167 @@
+.team {
+    position: relative;
+    bottom: 2rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.team__content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.team__title {
+    font-size: var(--h2-font-size);
+    font-family: var(--title-font-primary);
+    color: var(--accent-color);
+}
+
+.team__subtitle {
+    width: 92px;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.mySwiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--title-color-dark); 
+    width: 10px; 
+    height: 10px;
+    margin: 0 5px; 
+    transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+    transform: scale(1.2); 
+}
+
+.swiper-slide img {
+    display: block;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid var(--title-color-dark);
+    border-radius: 10px;
+    filter: saturate(0);
+}
+
+.swiper-slide img:hover {
+    border-color: var(--accent-color);
+    filter: none;
+}
+
+.team__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    border: 2px solid var(--title-color-dark);
+    border-radius: 10px;
+}
+
+.team__card:hover {
+    border-color: var(--accent-color);
+}
+
+.wrapper__content-card {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    transition: bottom 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.team__card:hover .wrapper__content-card {
+    bottom: 2rem;
+}
+
+.title__card-team {
+    width: 250px;
+    text-align: center;
+}
+
+.text-hover {
+    position: absolute;
+}
+
+.team__card:hover .text-hover {
+    display: none;
+}
+
+
+.tiktok {
+    border: 2px solid var(--title-color);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.icon__card-team {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    margin: 0 0.5rem;
+}
+
+.tiktok:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.instagram:hover {
+    color: var(--accent-color);
+}
+
+.instagram {
+    scale: 1.1;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .team__content {
+        place-items: center;
+    }
+    
+    .swiper-pagination {
+        padding: 1rem;
+    }
+    
+    .team__title  {
+        text-align: center;
+    }
+    
+    .team__subtitle {
+        text-align: center;
+    }
+    
+    
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+}

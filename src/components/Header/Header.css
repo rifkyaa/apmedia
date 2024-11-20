@@ -1,0 +1,186 @@
+/* Change Background While Scroll */
+.scroll-header {
+    background-color: var(--body-color);
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.text-white {
+    color: var(--title-color);
+}
+
+.nav__logo{
+    font-family: var(--title-font-primary);
+    color: var(--accent-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo:hover {
+    color: var(--accent-color);
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    transition: .3s;
+}
+
+.nav__item {
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.nav__item:hover {
+    color: gray;
+
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: var(--title-color);
+}
+  
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+  
+.menu-toggle input {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top: -10px;
+    left: -15px;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0;
+}
+  
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+    transition: all 1s;
+}
+  
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+    transition: all 1s;
+}
+  
+.menu-toggle input:checked~span:nth-child(3) {
+    transition: all 1s;
+    opacity: 0;
+    transform: scale(0);
+}
+  
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+  
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+/* Active Link */
+.active-link {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.nav__link:hover {
+    color: gray;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (max-width: 768px) {
+
+    .nav {
+        height: var(--header-height);
+    }
+
+    .nav__menu {
+        position: fixed;
+        right: -100%;
+        top: 0;
+    }
+    
+    
+    /* Show Menu */
+    .show-menu {
+        background-color: rgba(0, 0, 0, 0.653);
+        position: fixed;
+        right: 0;
+        padding: 1.5rem 1rem;
+        transition: all .5s ease-in-out;
+        z-index: 4;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        width: 40%;
+        height: 100vh;
+    }
+    
+    
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 2rem;
+        z-index: 4;
+    }
+    
+    .nav__list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        top: 3rem;
+        gap: 0;
+    }
+
+    
+    .nav__item {
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .nav__menu {
+        padding: 2rem 0.25rem 4rem;
+    }
+
+    .nav__list {
+        column-gap: 0;
+    }
+
+    .nav__item {
+        padding: 1rem;
+        border-radius: 5px;
+    }
+}
