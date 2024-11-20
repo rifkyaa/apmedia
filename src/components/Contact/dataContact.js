@@ -11,8 +11,8 @@ export const dataContact = [
     { 
         id: 2,
         icon: MdOutlineWhatsapp, 
-        value: "WhatsApp: +6281456789",
-        link: "https://api.whatsapp.com/send?phone=628&text=Halo Admin! Saya berminat Berkolaborasi dengan"
+        value: "WhatsApp: +6281220102935",
+        link: "https://api.whatsapp.com/send?phone=6281220102935&text=Halo Kak, Saya Berminat Berkolaborasi?"
     },
     { 
         id: 3,
@@ -24,6 +24,6 @@ export const dataContact = [
         id: 4,
         icon: FaTiktok, 
         value: "TikTok: Apmexplore",
-        link: "https://www.instagram.com/apmedia_creative/"
+        link: "https://www.tiktok.com/@apmexplore?_t=8rXxyJKazv5&_r=1"
     }
 ];

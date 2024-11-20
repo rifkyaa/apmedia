@@ -8,7 +8,7 @@ export const dataTeam = [
         name: "Nandi Kelvin", 
         img: imgTeam1,
         social: {
-            tiktok: "",
+            tiktok: "https://www.tiktok.com/@nandikelvin92?_t=8rXxvA55hJQ&_r=1",
             instagram: "https://www.instagram.com/nandikelvinh/"
         }  
     },
@@ -32,7 +32,7 @@ export const dataTeam = [
         name: "Agan Septian Nugraha", 
         img: imgTeam4,
         social: {
-            tiktok: "",
+            tiktok: "https://www.tiktok.com/@agan.anomali?_t=8rXxrRuRHuh&_r=1",
             instagram: "https://www.instagram.com/agan.anomali/"
         }  
     },
