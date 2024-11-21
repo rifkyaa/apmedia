@@ -34,6 +34,7 @@
     border: 2px solid var(--title-color);
     padding: 2rem 1rem;
     height: 220px;
+    border-radius: 7px;
 }
 
 .title-icon {
@@ -63,8 +64,7 @@
 .title__latestVideo {
     font-size: var(--h2-font-size);
     font-family: var(--title-font-primary);
-    color: var(--title-color);
-    text-align: center;
+    color: var(--accent-color);
 }
 
 .wrapper-latestVideo {
@@ -133,7 +133,7 @@
     .programs {
         top: 2rem;
     }
-
+    
     .programs__content {
         justify-content: center;
         align-items: center;
@@ -173,5 +173,10 @@
 @media screen and (max-width: 576px) {
     .title-icon {
         font-size: var(--small-font-size);
+    }
+
+    .wrapper-icon {
+        padding: 1rem 0.5rem;
+        height: 180px;
     }
 }
