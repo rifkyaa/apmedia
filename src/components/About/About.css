@@ -179,4 +179,37 @@
     .title__card {
         font-size: var(--normal-font-size);
     }
+
+    .icon-third {
+        font-size: var(--h1-font-size);
+    }
+
+    .title-third {
+        font-size: var(--small-font-size);
+    }
+    
+    .subtitle-third {
+        font-size: var(--tiny-font-size);
+    }
+
 }
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .about__section-third {
+        padding: 1rem 0;
+        background-size: cover;
+    }
+    
+    .icon-third {
+        font-size: var(--h1-font-size);
+    }
+
+    .title-third {
+        font-size: var(--small-font-size);
+    }
+
+    .subtitle-third {
+        font-size: var(--tiny-font-size);
+    }
+  }
