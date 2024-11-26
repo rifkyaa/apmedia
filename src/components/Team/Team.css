@@ -105,6 +105,7 @@
 }
 
 .title__card-team {
+    font-size: var(--h3-font-size);
     width: 250px;
     text-align: center;
 }
