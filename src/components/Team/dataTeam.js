@@ -16,7 +16,7 @@ export const dataTeam = [
         name: "Rizky Eka Putra", 
         img: imgTeam2,
         social: {
-            tiktok: "",
+            tiktok: "https://www.tiktok.com/@rizkiekaputra5?_t=8rhqkPx9oV0&_r=1",
             instagram: "https://www.instagram.com/rizki.ekaputra.92/"
         }  
     },
@@ -24,7 +24,7 @@ export const dataTeam = [
         name: "Arland Pratama Muldiawan", 
         img: imgTeam3,
         social: {
-            tiktok: "",
+            tiktok: "https://www.tiktok.com/@arra.arland?_t=8rgnIMiDcim&_r=1",
             instagram: "https://www.instagram.com/arlandpm7/"
         }  
     },

@@ -76,6 +76,7 @@
     padding: 1rem;
     border: 2px solid var(--title-color-dark);
     border-radius: 10px;
+    margin-bottom: 3rem;
 }
 
 .team__card:hover {
